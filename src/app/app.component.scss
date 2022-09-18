@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*:root {
+  --blue: hsl(246, 80%, 60%);
+  --light-orange: hsl(15, 100%, 70%);
+  --soft-blue: hsl(195, 74%, 62%);
+  --light-red: hsl(348, 100%, 68%);
+  --lime-green: hsl(145, 58%, 55%);
+  --violet: hsl(264, 64%, 52%);
+  --soft-orange: hsl(43, 84%, 65%);
+
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+}*/
+
+.scaffold {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid red;
+  min-height: 100vh;
+}
+
+.attribution {
+  color: hsl(235, 45%, 61%);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html {
+  /*min-height: 100vh;*/
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: hsl(226, 43%, 10%);
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  position: absolute;
+}
+
+.container {
+  width: 100%;
+  padding: 16px 16px;
+}
+
+.first-section {
+  min-height: 250px;
+}
+
+.main-card {
+  height: 72px;
+  width: 317px;
+  position: relative;
+  margin: 0 auto;
+  top: 70px;
+}
+
+.main-user {
+  height: 105px;
+  display: flex;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 16px 16px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.main-img-container {
+  padding: 16px;
+  margin: auto 0;
+}
+
+.img-user {
+  width: 70px;
+  border: 2.5px solid white;
+  border-radius: 50%;
+}
+
+.info-user {
+  padding-top: 30px;
+}
+
+.user-title {
+  font-size: 12px;
+  font-weight: 300;
+  color: white;
+}
+
+.user-name {
+  margin-top: 5px;
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+}
+
+.main-card-details {
+  height: 72px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 16px 16px;
+  position: absolute;
+  width: 100%;
+  top: 85px;
+}
+
+.details-frequencies {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.detail-frequency {
+  padding-top: 35px;
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+}
+
+.detail-frequency:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.second-section {
+}
+
+.card {
+  height: 140px;
+  width: 317px;
+  position: relative;
+  margin: 10px auto;
+  top: 5px;
+}
+
+.card-header {
+  height: 80px;
+  background-color: hsl(15, 100%, 70%);
+  border-radius: 16px 16px;
+  overflow: hidden;
+}
+
+.card-img {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin-right: 15px;
+  top: -15px;
+}
+
+.card-time {
+  height: 100px;
+  width: 317px;
+  position: relative;
+  color: white;
+  border-radius: 16px 16px;
+  padding: 16px 16px;
+  background-color: hsl(235, 46%, 20%);
+  top: -45px;
+}
+
+.card-time:hover {
+  cursor: pointer;
+  background-color: hsl(235, 45%, 61%);
+}
+
+.card-activity {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.activity-name {
+  font-weight: 400;
+}
+
+.card-dots {
+  width: 20px;
+  height: 5px;
+  margin: auto 0;
+}
+
+.card-hours {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.current-hour {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.previous-hour {
+  color: hsl(236, 100%, 87%);
+  margin: auto 0;
+  font-weight: 300;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    /*min-height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    padding: 16px 16px;
+    margin: 0 auto;
+  }
+  .first-section {
+    /*min-height: 100vh;*/
+    width: 200px;
+    position: relative;
+    top: 150px;
+  }
+
+  .main-card {
+    height: 372px;
+    width: 170px;
+    position: absolute;
+    top: 0;
+  }
+
+  .main-user {
+    margin-top: 10px;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 16px 16px;
+    width: 170px;
+    z-index: 1;
+  }
+
+  .main-img-container {
+    padding: 16px;
+    margin: 0 10px;
+  }
+
+  .info-user {
+    padding-top: 16px;
+  }
+
+  .user-title {
+    font-size: 1em;
+    font-weight: 300;
+    color: white;
+    padding: 0 16px;
+    width: 187px;
+  }
+
+  .user-name {
+    margin-top: 5px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 400;
+    padding: 0 16px;
+  }
+
+  .main-card-details {
+    height: 140px;
+    background-color: hsl(235, 46%, 20%);
+    position: absolute;
+    width: 170px;
+    top: 235px;
+  }
+
+  .details-frequencies {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 16px;
+  }
+
+  .detail-frequency {
+    padding-top: 15px;
+  }
+
+  .second-section {
+    /* width: 100%;*/
+    position: relative;
+    top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 210px);
+    grid-template-rows: repeat(2, 170px);
+    grid-gap: 1rem;
+  }
+
+  .card {
+    margin: 0 0;
+    height: 165px;
+    width: 200px;
+    /*position: relative;*/
+    /*top: 5px;*/
+  }
+
+  .card-header {
+    height: 75px;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 16px 16px;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+
+  .card-img {
+    margin-right: 15px;
+    position: relative;
+    top: -15px;
+  }
+
+  .card-time {
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    width: 200px;
+    /*top: -45px;*/
+  }
+
+  .card-hours {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 10px;
+  }
+
+  .current-hour {
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  .previous-hour {
+    color: hsl(236, 100%, 87%);
+    margin: auto 0;
+    font-weight: 300;
+  }
+}
